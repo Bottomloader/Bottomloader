@@ -1,8 +1,18 @@
 <div align="center">
-  <h2>Hello There!</h2>
+    <h2>Hello There!</h2>
 </div>
 
 <strong>Hello!</strong> Welcome to my profile. I will give some basic information you should know about me 😉.
+
+<div align="center">
+    <h4>About Me</h4>
+    <ul>
+        <li>I'm a backend developer</li>
+        <li>You can call me Ivaylo</li>
+        <li>I use aoi.js library for my bot</li>
+        <li>I'm straight</li>
+    </ul>
+</div>
 
 <div align="center">
     <h4>Languages Known</h4>
