@@ -4,9 +4,9 @@
 
 <strong>Hello!</strong> Welcome to my profile. I will give some basic information you should know about me 😉.
 
-<div style="display: inline-block; text-align: left;">
+<div align="center">
     <h4>About Me</h4>
-    <ul style="list-style-position: inside; text-align: center; display: inline-block;">
+    <ul style="list-style-position: inside; text-align: left; display: inline-block;">
         <li>I'm a backend developer</li>
         <li>You can call me Ivaylo</li>
         <li>I use aoi.js library for my bot (Yeah I don't know what to add)</li>
@@ -14,7 +14,7 @@
     </ul>
 </div>
 
-<div style="display: inline-block; text-align: left;">
+<div align="center">
     <h4>Languages Known</h4>
     <p>
         These are the languages I know: <br>
