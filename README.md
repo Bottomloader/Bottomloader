@@ -1,3 +1,3 @@
 <div align="center">
-## Hello, welcome to my profile!
+  <h2>Hello, welcome to my profile!</h2>
 </div>
