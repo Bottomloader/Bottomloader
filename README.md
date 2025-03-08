@@ -6,5 +6,5 @@
 
 <div align="center">
   <h3>Stats</h3>
-![top lang](https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&langs_count=4&layout=compact&theme=react&hide_border=true&bg_color=0D1117)
+![Bottomloader's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&theme=vue-dark&show_icons=true&hide_border=true&layout=compact)
 </div>
