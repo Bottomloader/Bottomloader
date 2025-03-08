@@ -4,7 +4,7 @@
 
 <strong>Hello!</strong> Welcome to my profile. I will give some basic information you should know about me 😉.
 
-<div align="center">
+<div style="display: inline-block; text-align: left;">
     <h4>About Me</h4>
     <ul style="list-style-position: inside; text-align: center; display: inline-block;">
         <li>I'm a backend developer</li>
