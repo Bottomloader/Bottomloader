@@ -14,7 +14,7 @@
     </ul>
 </div>
 
-<div align="center">
+<div style="display: inline-block; text-align: left;">
     <h4>Languages Known</h4>
     <p>
         These are the languages I know: <br>
