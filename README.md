@@ -6,5 +6,7 @@
 
 <div align="center">
   <h3>Stats</h3>
-![Bottomloader's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&theme=vue-dark&show_icons=true&hide_border=true&layout=compact)
+  <div>
+    <h4>Languages Known</h4>
+  </div>
 </div>
