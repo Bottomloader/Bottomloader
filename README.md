@@ -6,12 +6,10 @@
 
 <div align="center">
     <h4>About Me</h4>
-    <ul style="list-style-position: inside; text-align: left; display: inline-block;">
-        <li>I'm a backend developer</li>
-        <li>You can call me Ivaylo</li>
-        <li>I use aoi.js library for my bot (Yeah I don't know what to add)</li>
-        <li>I'm straight</li>
-    </ul>
+    - I'm a backend developer<br>
+    - You can call me Ivaylo<br>
+    - I use aoi.js library for my bot<br>
+    - I am NOT gay<br>
 </div>
 
 <div align="center">
