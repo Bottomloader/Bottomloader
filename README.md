@@ -25,7 +25,7 @@
       <a href="https://golang.org" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original-wordmark.svg" alt="golang" width="40" height="40"/>
       </a>
-    <br>But I mainly use Node.js
+    <br>But I <em>mainly</em> use Node.js
     </p>
   </div>
 </div>
