@@ -41,5 +41,5 @@
 <br>
 <br>
 Cya! <br>
-<img src="https://raw.githubusercontent.com/USERNAME/Bottomloader/main/src/gifs/cya.md"/>
+<img src="https://raw.githubusercontent.com/Bottomloader/Bottomloader/main/src/gifs/cya.md"/>
 </div>
