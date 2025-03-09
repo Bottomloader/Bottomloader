@@ -9,30 +9,37 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Update README
         run: |
-          BD_MONTH=10  # October
-          BD_DAY=20
-
-          TODAY=$(date -u +%Y-%m-%d)  # Get current date in UTC
-          TARGET_DATE=$(date -d "$(date -u +%Y)-$BD_MONTH-$BD_DAY" +%Y-%m-%d 2>/dev/null || date -j -v+0d -f "%Y-%m-%d" "$(date -u +%Y)-$BD_MONTH-$BD_DAY" +%Y-%m-%d)
+          BD_M=10
+          BD_D=20
           
-          if [[ "$TODAY" > "$TARGET_DATE" ]]; then
-            TARGET_DATE=$(date -d "$(($(date -u +%Y) + 1))-$BD_MONTH-$BD_DAY" +%Y-%m-%d 2>/dev/null || date -j -v+1y -f "%Y-%m-%d" "$(date -u +%Y)-$BD_MONTH-$BD_DAY" +%Y-%m-%d)
+          T=$(date -u +%Y-%m-%d)
+          TD=$(date -d "$(date -u +%Y)-$BD_M-$BD_D" +%Y-%m-%d 2>/dev/null || date -j -v+0d -f "%Y-%m-%d" "$(date -u +%Y)-$BD_M-$BD_D" +%Y-%m-%d)
+          
+          if [[ "$T" > "$TD" ]]; then
+            TD=$(date -d "$(($(date -u +%Y) + 1))-$BD_M-$BD_D" +%Y-%m-%d 2>/dev/null || date -j -v+1y -f "%Y-%m-%d" "$(date -u +%Y)-$BD_M-$BD_D" +%Y-%m-%d)
           fi
 
-          MONTHS_LEFT=$(( ($(date -d "$TARGET_DATE" +%s) - $(date -d "$TODAY" +%s)) / 2628000 ))
+          S=$(( $(date -d "$TD" +%s) - $(date -d "$T" +%s) ))
+          D=$(( S / 86400 ))
+          M=$(( D / 30 ))
+          RD=$(( D % 30 ))
 
-          sed -i "s/[0-9]\+ months/{COUNTOWN}/" README.md  
-sed -i "s/{COUNTDOWN}/$MONTHS_LEFT months/" README.md
+          C="$D days"
+          [ "$M" -gt 0 ] && C="$M months $RD days"
 
-      - name: Commit and push changes
+          sed -i "s/[0-9]\+ months [0-9]\+ days/{COUNTDOWN}/" README.md
+          sed -i "s/[0-9]\+ days/{COUNTDOWN}/" README.md
+          sed -i "s/{COUNTDOWN}/$C/" README.md
+
+      - name: Commit and push
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add README.md
-          git commit -m "Update countdown in README" || exit 0  # Avoid commit if no changes
+          git commit -m "Update countdown in README" || exit 0
           git push
