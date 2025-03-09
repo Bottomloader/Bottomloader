@@ -38,6 +38,6 @@
 
 <div align="center">
     You can reach me from <a href="https://discord.com/users/1251981607468798089" target="_blank">Discord</a>.<br>
-Cya!
+Cya! <br>
 ![gif url](https://tenor.com/view/see-you-cat-kiss-mwah-goodbye-kiss-gif-24378635)
 </div>
