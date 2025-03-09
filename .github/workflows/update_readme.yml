@@ -2,7 +2,7 @@ name: Update README Countdown
 
 on:
   schedule:
-    - cron: "0 * * * *" 
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -24,16 +24,20 @@ jobs:
             TD=$(date -d "$(($(date -u +%Y) + 1))-$BD_M-$BD_D" +%Y-%m-%d 2>/dev/null || date -j -v+1y -f "%Y-%m-%d" "$(date -u +%Y)-$BD_M-$BD_D" +%Y-%m-%d)
           fi
 
-          S=$(( $(date -d "$TD" +%s) - $(date -d "$T" +%s) ))
-          D=$(( S / 86400 ))
-          M=$(( D / 30 ))
-          RD=$(( D % 30 ))
+          M=$(( ($(date -d "$TD" +%Y) - $(date -d "$T" +%Y)) * 12 + $(date -d "$TD" +%m) - $(date -d "$T" +%m) ))
+          D=$(( $(date -d "$TD" +%d) - $(date -d "$T" +%d) ))
+          
+          if [ "$D" -lt 0 ]; then
+            M=$((M - 1))
+            P_M_DAYS=$(date -d "$T -$(date -d "$T" +%d) days +1 month -1 day" +%d)
+            D=$((D + P_M_DAYS))
+          fi
 
           C="$D days"
-          [ "$M" -gt 0 ] && C="$M months $RD days"
+          [ "$M" -gt 0 ] && C="$M months $D days"
 
-          sed -i "s/[0-9]\+ months [0-9]\+ days/{COUNTDOWN}/" README.md
-          sed -i "s/[0-9]\+ days/{COUNTDOWN}/" README.md
+          sed -i -E "s/[0-9]+ months [0-9]+ days/{COUNTDOWN}/g" README.md
+          sed -i -E "s/[0-9]+ days/{COUNTDOWN}/g" README.md
           sed -i "s/{COUNTDOWN}/$C/" README.md
 
       - name: Commit and push
