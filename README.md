@@ -6,10 +6,10 @@
 
 <div align="center">
     <h4>About Me</h4>
-    - I'm a backend developer<br>
-    - You can call me Ivaylo<br>
-    - I use aoi.js library for my bot<br>
-    - I am NOT gay<br>
+    • I'm a backend developer<br>
+    • You can call me Ivaylo<br>
+    • I use aoi.js library for my bot<br>
+    • I am NOT gay<br>
 </div>
 
 <div align="center">
