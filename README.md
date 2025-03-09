@@ -41,5 +41,5 @@
 <br>
 <br>
 Cya! <br>
-<img src="https://raw.githubusercontent.com/snipe/animated-gifs/master/bye/NOTHING%20TO%20DO%20HERE....gif"/>
+<img src="https://raw.githubusercontent.com/USERNAME/Bottomloader/main/src/gifs/cya.md"/>
 </div>
