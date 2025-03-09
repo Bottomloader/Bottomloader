@@ -1,5 +1,5 @@
 <div align="center">
-    <h2>Hello There!</h2>
+    <h2><code>console.log("Hello There!");</code></h2>
 </div>
 
 <strong>Hello!</strong> Welcome to my profile. I will give some basic information you should know about me 😉.
@@ -9,7 +9,7 @@
     • I'm a backend developer<br>
     • You can call me Ivaylo<br>
     • I use aoi.js library for my bot<br>
-    • I am NOT gay<br>
+    • I am straight<br>
     • 7 months  days until my birthday 
 </div>
 
