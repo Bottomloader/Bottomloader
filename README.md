@@ -41,5 +41,5 @@
 <br>
 <br>
 Cya! <br>
-[![NOTHING-TO-DO-HERE.gif](https://i.postimg.cc/BnmHLCFQ/NOTHING-TO-DO-HERE.gif)](https://postimg.cc/3kDdzm9P)
+<img source="https://i.postimg.cc/BnmHLCFQ/NOTHING-TO-DO-HERE.gif"/>
 </div>
