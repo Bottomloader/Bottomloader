@@ -17,24 +17,34 @@ jobs:
           BD_M=10
           BD_D=20
           
-          T=$(date -u +%Y-%m-%d)
-          TD=$(date -d "$(date -u +%Y)-$BD_M-$BD_D" +%Y-%m-%d 2>/dev/null || date -j -v+0d -f "%Y-%m-%d" "$(date -u +%Y)-$BD_M-$BD_D" +%Y-%m-%d)
-          
-          if [[ "$T" > "$TD" ]]; then
-            TD=$(date -d "$(($(date -u +%Y) + 1))-$BD_M-$BD_D" +%Y-%m-%d 2>/dev/null || date -j -v+1y -f "%Y-%m-%d" "$(date -u +%Y)-$BD_M-$BD_D" +%Y-%m-%d)
-          fi
+          TODAY=$(date -u +%Y-%m-%d)
+          YEAR=$(date -u +%Y)
+          TARGET="$YEAR-$BD_M-$BD_D"
 
-          M=$(( ($(date -d "$TD" +%Y) - $(date -d "$T" +%Y)) * 12 + $(date -d "$TD" +%m) - $(date -d "$T" +%m) ))
-          D=$(( $(date -d "$TD" +%d) - $(date -d "$T" +%d) ))
-          
-          if [ "$D" -lt 0 ]; then
-            M=$((M - 1))
-            P_M_DAYS=$(date -d "$T -$(date -d "$T" +%d) days +1 month -1 day" +%d)
-            D=$((D + P_M_DAYS))
+          if [[ "$TODAY" > "$TARGET" ]]; then
+            TARGET="$((YEAR + 1))-$BD_M-$BD_D"
           fi
+          
+          DIFF_DAYS=$(( ( $(date -d "$TARGET" +%s) - $(date -d "$TODAY" +%s) ) / 86400 ))
 
-          C="$D days"
-          [ "$M" -gt 0 ] && C="$M months $D days"
+          M=0
+          D=$DIFF_DAYS
+          START_DATE="$TODAY"
+
+          while [[ "$START_DATE" < "$TARGET" ]]; do
+            NEXT_MONTH=$(date -d "$START_DATE +1 month" +%Y-%m-%d)
+            if [[ "$NEXT_MONTH" <= "$TARGET" ]]; then
+              M=$((M + 1))
+              START_DATE=$NEXT_MONTH
+            else
+              break
+            fi
+          done
+
+          REMAINING_DAYS=$(( ( $(date -d "$TARGET" +%s) - $(date -d "$START_DATE" +%s) ) / 86400 ))
+
+          C="$REMAINING_DAYS days"
+          [ "$M" -gt 0 ] && C="$M months $REMAINING_DAYS days"
 
           sed -i -E "s/[0-9]+ months [0-9]+ days/{COUNTDOWN}/g" README.md
           sed -i -E "s/[0-9]+ days/{COUNTDOWN}/g" README.md
