@@ -8,7 +8,6 @@
     <h4>About Me</h4>
     • I'm a backend developer<br>
     • You can call me Ivaylo<br>
-    • I use aoi.js library for my bot<br>
     • I am straight<br>
     • 7 months  days until my birthday 
 </div>
