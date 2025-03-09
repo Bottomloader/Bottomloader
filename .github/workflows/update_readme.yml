@@ -21,19 +21,18 @@ jobs:
           YEAR=$(date -u +%Y)
           TARGET="$YEAR-$BD_M-$BD_D"
 
-          if [[ "$TODAY" > "$TARGET" ]]; then
+          if [ "$(date -d "$TODAY" +%s)" -gt "$(date -d "$TARGET" +%s)" ]; then
             TARGET="$((YEAR + 1))-$BD_M-$BD_D"
           fi
           
           DIFF_DAYS=$(( ( $(date -d "$TARGET" +%s) - $(date -d "$TODAY" +%s) ) / 86400 ))
 
           M=0
-          D=$DIFF_DAYS
           START_DATE="$TODAY"
 
-          while [[ "$START_DATE" < "$TARGET" ]]; do
+          while [ "$(date -d "$START_DATE" +%s)" -lt "$(date -d "$TARGET" +%s)" ]; do
             NEXT_MONTH=$(date -d "$START_DATE +1 month" +%Y-%m-%d)
-            if [[ "$NEXT_MONTH" <= "$TARGET" ]]; then
+            if [ "$(date -d "$NEXT_MONTH" +%s)" -le "$(date -d "$TARGET" +%s)" ]; then
               M=$((M + 1))
               START_DATE=$NEXT_MONTH
             else
@@ -41,19 +40,4 @@ jobs:
             fi
           done
 
-          REMAINING_DAYS=$(( ( $(date -d "$TARGET" +%s) - $(date -d "$START_DATE" +%s) ) / 86400 ))
-
-          C="$REMAINING_DAYS days"
-          [ "$M" -gt 0 ] && C="$M months $REMAINING_DAYS days"
-
-          sed -i -E "s/[0-9]+ months [0-9]+ days/{COUNTDOWN}/g" README.md
-          sed -i -E "s/[0-9]+ days/{COUNTDOWN}/g" README.md
-          sed -i "s/{COUNTDOWN}/$C/" README.md
-
-      - name: Commit and push
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add README.md
-          git commit -m "Update countdown in README" || exit 0
-          git push
+          REMAINING_DAYS=$(( ( $(date -d "$TARGET" +%s) - $(date -d "$START_DATE"
