@@ -26,7 +26,8 @@ jobs:
 
           MONTHS_LEFT=$(( ($(date -d "$TARGET_DATE" +%s) - $(date -d "$TODAY" +%s)) / 2628000 ))
 
-          sed -i "s/{COUNTDOWN}/$MONTHS_LEFT months/" README.md
+          sed -i "s/[0-9]\+ months/{COUNTOWN}/" README.md  
+sed -i "s/{COUNTDOWN}/$MONTHS_LEFT months/" README.md
 
       - name: Commit and push changes
         run: |
