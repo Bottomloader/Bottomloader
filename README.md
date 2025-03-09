@@ -39,5 +39,5 @@
 <div align="center">
     You can reach me from <a href="https://discord.com/users/1251981607468798089" target="_blank">Discord</a>.<br>
 Cya! <br>
-![gif](https://c.tenor.com/9sNYD2orJyMAAAAd/tenor.gif)
+![gif](https://gifdb.com/images/thumbnail/cat-bye-meme-b93y3ygps32hlwwz.gif)
 </div>
