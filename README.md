@@ -34,3 +34,6 @@
         <br>But I <em>mainly</em> use Node.js.
     </p>
 </div>
+
+<div align="center">
+    You can reach me from <a href="https://discord.com/users/1251981607468798089" target="_blank">Discord</a>.
