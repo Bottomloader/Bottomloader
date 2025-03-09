@@ -43,3 +43,4 @@
 Cya! <br>
 <img src="https://raw.githubusercontent.com/snipe/animated-gifs/master/bye/NOTHING%20TO%20DO%20HERE....gif"/>
 </div>
+![TC](https://github.com/Bottomloader/Bottomloader/actions/workflows/update_readme.yml/badge.svg)
