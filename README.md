@@ -1,5 +1,5 @@
 <div align="center">
-    <h2><code>console.log("Hello There!");</code></h2>
+    <h2><code>print("Hello, World!")</code></h2>
 </div>
 
 <strong>Hello!</strong> Welcome to my profile. I will give some basic information you should know about me 😉.
