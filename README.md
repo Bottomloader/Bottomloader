@@ -10,7 +10,7 @@
     • You can call me Ivaylo<br>
     • I use aoi.js library for my bot<br>
     • I am NOT gay<br>
-    • {COUNTDOWN} until my birthday 
+    • 7 months 15 days until my birthday 
 </div>
 
 <div align="center">
