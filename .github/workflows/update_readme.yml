@@ -2,7 +2,7 @@ name: Update README Countdown
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "* * * * *"
   workflow_dispatch:
 
 jobs:
@@ -17,47 +17,39 @@ jobs:
         run: |
           BD_M=10
           BD_D=20
-          
           TODAY=$(date -u +%Y-%m-%d)
           YEAR=$(date -u +%Y)
           TARGET="$YEAR-$(printf '%02d' $BD_M)-$(printf '%02d' $BD_D)"
-
           TODAY_TS=$(date -d "$TODAY" +%s)
           TARGET_TS=$(date -d "$TARGET" +%s)
-
-          if [[ "$TODAY_TS" -gt "$TARGET_TS" ]]; then
-            TARGET="$((YEAR + 1))-$(printf '%02d' $BD_M)-$(printf '%02d' $BD_D)"
+          if [ "$TODAY_TS" -gt "$TARGET_TS" ]; then
+            TARGET="$(( $YEAR + 1 ))-$(printf '%02d' $BD_M)-$(printf '%02d' $BD_D)"
             TARGET_TS=$(date -d "$TARGET" +%s)
           fi
-
           DIFF_DAYS=$(( (TARGET_TS - TODAY_TS) / 86400 ))
-
           M=0
           TEMP_DATE="$TODAY"
-
-          while [[ $(date -d "$TEMP_DATE" +%s) -lt $TARGET_TS ]]; do
+          while [ $(date -d "$TEMP_DATE" +%s) -lt "$TARGET_TS" ]; do
             NEXT_MONTH=$(date -d "$TEMP_DATE +1 month" +%Y-%m-%d)
-            if [[ $(date -d "$NEXT_MONTH" +%s) -le $TARGET_TS ]]; then
+            if [ $(date -d "$NEXT_MONTH" +%s) -le "$TARGET_TS" ]; then
               M=$((M + 1))
-              TEMP_DATE=$NEXT_MONTH
+              TEMP_DATE="$NEXT_MONTH"
             else
               break
             fi
           done
-
           REMAINING_DAYS=$(( (TARGET_TS - $(date -d "$TEMP_DATE" +%s)) / 86400 ))
-
-          if [[ $M -gt 0 ]]; then
+          if [ "$M" -gt 0 ]; then
             C="$M months $REMAINING_DAYS days"
           else
             C="$REMAINING_DAYS days"
           fi
-
-          sed -i "s/[0-9]\+ months [0-9]\+ days/{COUNTDOWN}/" README.md
-          sed -i "s/[0-9]\+ days/{COUNTDOWN}/" README.md
+          sed -i -E "s/[0-9]+ months [0-9]+ days/{COUNTDOWN}/g" README.md
+          sed -i -E "s/[0-9]+ days/{COUNTDOWN}/g" README.md
           sed -i "s/{COUNTDOWN}/$C/" README.md
 
       - name: Commit and Push Changes
+        shell: bash
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
