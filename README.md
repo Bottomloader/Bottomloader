@@ -10,7 +10,7 @@
     • You can call me Ivaylo<br>
     • I use aoi.js library for my bot<br>
     • I am NOT gay<br>
-    • <span id="countdown" style="font-weight: bold;"></span>
+    • {COUNTDOWN} until my birthday 
 </div>
 
 <div align="center">
@@ -39,21 +39,3 @@
 <div align="center">
     You can reach me from <a href="https://discord.com/users/1251981607468798089" target="_blank">Discord</a>, cya!
 </div>
-
-<script>
-  function updateCountdown() {
-    let time = new Date();
-    let bd = new Date(time.getFullYear(), 9, 20);
-
-    if (time > bd) {
-      targetDate.setFullYear(time.getFullYear() + 1);
-    }
-
-    let rmbd = (bd.getFullYear() - time.getFullYear()) * 12 + (bd.getMonth() - time.getMonth());
-
-    document.getElementById("countdown").innerText = rmbd + " until my birthday";
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 86400000);
-</script>
