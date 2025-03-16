@@ -6,10 +6,14 @@
 
 <div align="center">
     <h4>About Me</h4>
-    • I'm a backend developer<br>
-    • You can call me Ivaylo<br>
-    • I am straight<br>
-    • 7 months 4 days until my birthday 
+    ```js
+    const ivaylo = {
+      name: "Ivaylo",<br>
+      type: "Backend developer,<br>
+      sexuality: "straight",<br>
+      birthday: "{COUNTDOWN}"<br> 
+    };
+    ```
 </div>
 
 <div align="center">
