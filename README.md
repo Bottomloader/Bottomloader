@@ -4,15 +4,12 @@
 
 <strong>Hello!</strong> Welcome to my profile. I will give some basic information you should know about me 😉.
 
-<div align="center">
-    <h4>About Me</h4>
-    <code>const ivaylo = { <br>
-      name: "Ivaylo",<br>
-      type: "Backend developer,<br>
-      sexuality: "straight",<br>
-      birthday: "{COUNTDOWN}"<br> 
-    };
-    </code>
+<div align="center">  
+   <h4>About Me</h4>  
+   • I'm a backend developer<br>  
+   • You can call me Ivaylo<br>  
+   • I am straight<br>  
+   • {COUNTDOWN} until my birthday  
 </div>
 
 <div align="center">
