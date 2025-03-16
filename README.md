@@ -6,7 +6,7 @@
 
 <div align="center">
     <h4>About Me</h4>
-    <code>const ivaylo = {
+    <code>const ivaylo = { <br>
       name: "Ivaylo",<br>
       type: "Backend developer,<br>
       sexuality: "straight",<br>
