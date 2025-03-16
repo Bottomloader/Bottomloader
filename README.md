@@ -6,14 +6,13 @@
 
 <div align="center">
     <h4>About Me</h4>
-    ```js
-    const ivaylo = {
+    <code>const ivaylo = {
       name: "Ivaylo",<br>
       type: "Backend developer,<br>
       sexuality: "straight",<br>
       birthday: "{COUNTDOWN}"<br> 
     };
-    ```
+    </code>
 </div>
 
 <div align="center">
