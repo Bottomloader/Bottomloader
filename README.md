@@ -9,7 +9,7 @@
    • I'm a backend developer<br>  
    • You can call me Ivaylo<br>  
    • I am straight<br>  
-   • 7 months 2 days until my birthday  
+   • 7 months 1 days until my birthday  
 </div>
 
 <div align="center">
