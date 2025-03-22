@@ -7,8 +7,7 @@
 <div align="center">  
    <h4>About Me</h4>  
    • I'm a backend developer<br>  
-   • You can call me Ivaylo<br>  
-   • I am straight<br>  
+   • You can call me Ivaylo<br>
    • 6 months 28 days until my birthday  
 </div>
 
