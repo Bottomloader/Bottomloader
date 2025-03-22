@@ -35,7 +35,7 @@
 </div>
 
 <div align="center">
-    You can reach me from <a href="https://discord.com/users/1251981607468798089" target="_blank">Discord</a>.<br>
+    You can reach me from <a href="https://discord.com/users/1251981607468798089" target="_blank">Discord</a>. <em>(I don't really look at my DMs)</em><br>
 <br>
 <br>
 Cya! <br>
