@@ -38,7 +38,7 @@
     <h4>Stats!</h4>
     ![Bottomloader's Streak](https://github-readme-streak-stats.herokuapp.com/?user=Bottomloader&theme=tokyonight&hide_border=true)
     <h6>Most Used Language</h6>
-    ![Bottomloader's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&theme=tokyonight&show_icons=true&hide_border=true&layout=compact)
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&theme=tokyonight&show_icons=true&hide_border=true&layout=compact">
 </div>
 
 <div align="center">
