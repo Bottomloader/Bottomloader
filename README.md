@@ -35,6 +35,13 @@
 </div>
 
 <div align="center">
+    <h4>Stats!</h4>
+    ![Bottomloader's Streak](https://github-readme-streak-stats.herokuapp.com/?user=Bottomloader&theme=tokyonight&hide_border=true)
+    <h6>Most Used Language</h6>
+    ![Bottomloader's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&theme=tokyonight&show_icons=true&hide_border=true&layout=compact)
+</div>
+
+<div align="center">
     You can reach me from <a href="https://discord.com/users/1251981607468798089" target="_blank">Discord</a>. <em>(I don't really look at my DMs)</em><br>
 <br>
 <br>
