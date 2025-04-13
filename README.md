@@ -40,11 +40,3 @@
     <h6>Most Used Language</h6>
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&theme=tokyonight&show_icons=true&hide_border=true&layout=compact">
 </div>
-
-<div align="center">
-    You can reach me from <a href="https://discord.com/users/1251981607468798089" target="_blank">Discord</a>. <em>(I don't really look at my DMs)</em><br>
-<br>
-<br>
-Cya! <br>
-<img src="https://raw.githubusercontent.com/snipe/animated-gifs/master/bye/NOTHING%20TO%20DO%20HERE....gif"/>
-</div>
