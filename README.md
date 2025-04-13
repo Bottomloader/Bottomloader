@@ -36,7 +36,7 @@
 
 <div align="center">
     <h4>Stats!</h4>
-    ![Bottomloader's Streak](https://github-readme-streak-stats.herokuapp.com/?user=Bottomloader&theme=tokyonight&hide_border=true)
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bottomloader&theme=tokyonight&hide_border=true">
     <h6>Most Used Language</h6>
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&theme=tokyonight&show_icons=true&hide_border=true&layout=compact">
 </div>
