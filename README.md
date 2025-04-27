@@ -8,7 +8,7 @@
    <h4>About Me</h4>  
    • I'm a backend developer<br>  
    • You can call me Ivaylo<br>
-   • 5 months 26 days until my birthday  
+   • 5 months 23 days until my birthday  
 </div>
 
 <div align="center">
