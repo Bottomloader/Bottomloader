@@ -24,4 +24,4 @@ I'm not in many projects but I try to make the ones I'm in good!
 If you have any ideas of improvement, contact me!  
   
 ## Stats 👀   
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Bottomloader&theme=tokyonight&hide_border=true"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&theme=tokyonight&show_icons=true&hide_border=true&layout=compact">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Bottomloader&theme=tokyonight&hide_border=true"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bottomloader&theme=tokyonight&show_icons=true&hide_border=true&layout=compact">
