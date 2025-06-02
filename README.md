@@ -1,12 +1,12 @@
 # Hello, I'm Ivaylo! 👋  
   
-I'm a self taught full-stack developer in Türkiye, not a very good country but that's not gonna stop me! I mostly code in my free time with `JavaScript`.   
+I'm a self taught full-stack developer in Türkiye. I mostly code in my free time with `Typescript`.   
 I mostly understand how codes work but if I'm not comfortable with the language I'm writing on then things get slow.  
   
 ## Quick Info ✨  
 - My pronouns are He/Him  
 - My birthday is in 4 months 18 days
-- I know `Python`, `JavaScript`, `Golang`, `HTML` and `CSS`!  
+- I know `Python`, `JavaScript`, `Typescript`, `Golang`, `HTML` and `CSS`!  
   
 ## How to reach me? 💬  
   
@@ -14,12 +14,14 @@ I mostly understand how codes work but if I'm not comfortable with the language 
 - Email: `randomacc.for1randomthings@gmail.com`  
   
 ## Projects 🔥  
-  
-I'm not in many projects but I try to make the ones I'm in good!  
+
+> Remember these might not be up-to-date, you can check my repositorys to see all my projects!
   
 - 🆘 `BDFD-Tutorials` - The basics and hard parts of BDFD, awesome for everyone!  
   
 - 👾 `Unofficial BDFD api` - BDFD users are in struggle with the limits they have, so this is a helpful API for them   
+
+- 🚀 `loopy-ts` - The best API wrapper for `aoi.loopy5418.dev` made in `Typescript` 
   
 If you have any ideas of improvement, contact me!  
   
